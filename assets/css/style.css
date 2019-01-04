@@ -10,7 +10,7 @@ header,section{
 
 }
 html{
-	scroll-behavior: smooth;	
+	scroll-behavior: smooth;
 }
 
 /*--------------------LOGO--------------------------------*/
@@ -47,7 +47,7 @@ html{
 	text-transform: uppercase;
 	transition: 0.5s;
 	z-index: 10;
-	border: 1px solid #faac01;
+	border: 1px solid rgba(255,215,0,0.8);
 	padding: 0 20px;
 	transition: 1s;
 }
@@ -59,7 +59,7 @@ html{
 }
 .toggle.active:before{
 	content: 'Close';
-	color: #faac01;
+	color: rgba(255,215,0,0.8);
 	line-height: 40px;
 	transition: 1s;
 }
@@ -172,6 +172,16 @@ html{
 	text-align: center;
 	margin-top: 5%;
 }
+.title-service-h3{
+	padding-left: 15rem;
+	padding-right: 15rem;
+	display: inline-block;
+	/*border-bottom: 4px solid gold;*/
+	margin-bottom: 15px;
+	background-image: url(../images/bgtitle.png);
+	background-position: center;
+	/*background-size: cover;*/
+}
 .service{
 	height: 400px;
 	width: 30%;
@@ -181,28 +191,28 @@ html{
 	padding: 2rem;
 	border-radius: 5px;
 	text-align: center;
-	transition: 0.5s;
-	box-shadow: 0 5px 10px black;
+	transition: 0.3s;
+	box-shadow: 0 2px 5px black;
 }
 .service:hover{
 	background-color:grey;
-	transition: 0.5s;
-	box-shadow: 0 0 20px black;
+	transition: 0.3s;
+	box-shadow: 0 2px 15px black;
 }
 .service-image{
 	position: relative;
 	top: -40%;
 }
 .service:hover .service-image img{
-	border:10px solid grey;
+	/*border:10px solid grey;*/
 	transition: 0.5s;
-	box-shadow: 0 0 10px black;	
+	box-shadow: 0 0 5px black;
 }
 .service-image img{
 	height: 250px;
 	width: 250px;
 	border-radius: 50%;
-	border:10px solid lightgrey;
+	border:10px solid #f2f2f2;
 	transition: 0.5s;
 
 }
@@ -218,7 +228,7 @@ html{
 /*-----------------------END OF Service--------------------------------------*/
 /*---------------------ABOUT US----------------------------------------------*/
 .aboutus{
-	height: 100vh;
+	height: auto;
 	position: relative;
 	overflow: hidden;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(../images/bg3.jpg);
@@ -256,8 +266,9 @@ html{
 }
 .vision-mission{
 	width: 45%;
-	margin-top: 100px;
-	color: #fff;	
+	margin-top: 70px;
+	margin-bottom: 70px;
+	color: #fff;
 }
 .vision h3, .mission h3{
 	border-bottom: 2px solid gold;
@@ -268,15 +279,29 @@ html{
 }
 .aboutus-sidepic{
 	width: 50%;
-	position: relative;
+	position: absolute;
 	top: -18%;
-	right: -5%;
+	right: 1%;
 }
 .aboutus-sidepic img{
 	height: 100%;
 	width: 100%;
-	border-radius: 30px 0 30px 0;
-	box-shadow: 5px 5px 10px goldenrod;
+	/*border-radius: 5px;*/
+	/*box-shadow: 0 -10px 10px black;*/
+	border: 10px solid #f2f2f2;
+
+}
+.aboutus-sub-sidepic{
+	width: 30%;
+	position: absolute;
+	bottom: -2%;
+	right: 5%;
+	z-index: 1;
+}
+.aboutus-sub-sidepic img{
+	height: 100%;
+	width: 100%;
+	border: 10px solid #f2f2f2;
 
 }
 
@@ -296,7 +321,9 @@ html{
 }
 .box img{
 	width: 100%;
-	height: auto;
+	height: 300px;
+	object-fit: cover;
+	object-position: top;
 	transform: scale(1.6);
 	transition: all 0.3s ease 0s;
 }
@@ -424,13 +451,16 @@ html{
 
 /*----------------------TESTIMONIALS---------------------------------------------*/
 .testimonials{
-	height: 100vh;
+	height: auto;
 	position: relative;
 	overflow: hidden;
 	background-image: linear-gradient(to left , rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(../images/bg2.jpg);
+	/*background-image: url(../images/bg2.jpg);*/
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	padding-top:2rem;
+	padding-bottom: 5rem;
 
 }
 .testimonials:before{
@@ -450,17 +480,99 @@ html{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: #f2f2f2;
 	top: 100%;
 	left: 0;
 	transform-origin: right;
 	transform: skewY(3deg);
 	box-shadow: 0 0 100px black;
 }
+.testimonial{
+	background-color: #f2f2f2;
+	padding: 30px 30px 50px;
+	margin: 0 15px 100px;
+	position: relative;
+	margin-top: 50px;
+}
+.testimonial:before,
+.testimonial:after{
+	content: "";
+	border-top: 40px solid #f2f2f2;
+	border-right: 125px solid transparent;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+}
+.testimonial:after{
+	border-right:none;
+	border-left: 125px solid transparent;
+	left: auto;
+	right: 0;
+}
+.testimonial .icon1{
+	/*display: inline-block;*/
+	position: absolute;
+	top: -3%;
+	left: -2%;
+	font-size: 50px;
+	color: gold;
+	/*margin-bottom: 20px;*/
+	opacity: 0.6;
+}
+.testimonial .icon2{
+	position: absolute;
+	right: -2%;
+	bottom: 17%;
+	font-size: 50px;
+	color: gold;
+	opacity: 0.6;
+}
+.testimonial .testimonial-description{
+	font-size: 16px;
+	color: #777;
+	text-align: center;
+	margin-bottom: 30px;
+	opacity: 0.9;
+	letter-spacing: -1px;
+}
+.testimonial .testimonial-content{
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+.testimonial .testimonial-pic{
+	display: inline-block;
+	border: 6px solid #f2f2f2;
+	border-radius: 50%;
+	box-shadow: 0 0 6px 2px rgba(255,215,0, 0.6);
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+}
+.testimonial .testimonial-pic img{
+	width: 100px;
+	height: 100px;
+	object-position: center;
+	object-fit: cover;
+}
+.testimonials .testimonial-name{
+	color: #f2f2f2;
+}
 /*----------------------END OF TESTIMONIALS---------------------------------------------*/
 /*---------------------GALLERY--------------------------------------------*/
 .gallery{
-	height: 100vh;
+	height: auto;
+}
+.gallery-body img{
+	height: 100%;
+	width: 100%;
+	margin-bottom: 10px;
+	box-shadow: 0 0 5px grey;
+	transition: .5s;
+}
+.gallery-body img:hover{
+	box-shadow: 0 0 15px black;
+	transition: .5s;
 }
 /*---------------------END OF GALLERY--------------------------------------------*/
 /*-----------------FOOTER----------------------------------------------------*/
