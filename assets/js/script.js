@@ -19,6 +19,8 @@ $(document).ready(function(){
 		autoPlay: true
 	})
 
-
+	$(".indiv-service:odd .indiv-service-pic-1").addClass("order-lg-2");
+	$(".indiv-service:odd .indiv-service-content").addClass("order-lg-1");
+	$(".indiv-service:odd .indiv-service-pic-2").addClass("order-lg-3");
 
 })
