@@ -748,8 +748,10 @@ html{
 	transition: .5s;
 	font-weight: bold;
 }
+
 .aboutus-nav span{
 	margin-right: 15px;
+
 }
 .aboutus-nav span a:hover{
 	color: rgba(255,215,0, 0.8);
@@ -912,6 +914,52 @@ html{
 	border-top-color: gold;
 }
 
+.aboutus2{
+	height: 600px;
+}
+.aboutus2-border{
+	height: 500px;
+	width: 100%;
+	border:15px solid rgba(0,0,0,0.9);
+}
+.aboutus2-img{
+	position: relative;
+	top: -45%;
+	left: -8%;
+	border:15px solid #f2f2f2;	
+}
+.aboutus2-img img{
+	height: 480px;
+	width: 100%;
+	box-shadow: 0 0 10px black;
+}
+.aboutus2-content{
+	margin-top: 170px;
+}
+.aboutus2-content h5{
+	color: grey;
+}
+.aboutus2-content h3,
+.title-aboutus2-h3 h3{
+	color: rgba(0,0,0,0.7);
+	font-weight: 600;
+	text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.aboutus2-content h3 span{
+	color: rgba(0,0,0,0.9);
+}
+.aboutus2-content p{
+	margin-left: 10px;
+}
+.title-aboutus2-h3{
+	background-image: url(../images/bgtitle.png);
+	background-size: cover;
+	background-position: center;
+}
+.aboutus2-motto{
+	position: relative;
+	top: 0;
+}
 /*END OF ABOUT US PAGE*/
 
 
