@@ -23,4 +23,5 @@ $(document).ready(function(){
 	$(".indiv-service:odd .indiv-service-content").addClass("order-lg-1");
 	$(".indiv-service:odd .indiv-service-pic-2").addClass("order-lg-3");
 
+
 })

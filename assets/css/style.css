@@ -960,6 +960,33 @@ html{
 	position: relative;
 	top: 0;
 }
+.recent-post-img img{
+	width: 100%;
+	height: 100%;
+}
+#recent-post-indiv:nth-child(odd){
+	background-color: lightgrey;
+
+}
+#recent-post-indiv{
+	transition: .5s;
+}
+#recent-post-indiv:hover{
+	background-color: rgba(0,0,0,0.6);
+	transition: .5s;
+}
+#side-footer{
+	background-color: lightgrey;
+}
+#side-footer small a{
+	color: grey;
+	text-decoration: none;
+}
+#side-footer p{
+	color: rgba(0,0,0,0.7);
+	margin-bottom: 0;
+}
+
 /*END OF ABOUT US PAGE*/
 
 
