@@ -44,6 +44,11 @@ $(document).ready(function(){
 	    $(this).parent().addClass('active');
 	});
 
+	$(".indiv-member-img img").click(function() {
+	  	$(".indiv-member-img ").removeClass('active');
+	    $(this).parent().addClass('active');
+	});
+
 	$(".indiv-testimonies-gall-pic img").click(function() {
 	  	$(".indiv-testimonies-gall-pic").removeClass('active');
 	    $(this).closest('div').addClass('active');

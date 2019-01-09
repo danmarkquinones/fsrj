@@ -140,6 +140,12 @@ html{
 	height: 100vh;
 	width: 100%;
 	filter: contrast(40%);
+	
+}
+.showcase1 img,
+.showcase3 img{
+	object-fit: cover;
+	object-position: bottom;
 }
 .showcase .owl-controls {
 	position: relative;
@@ -245,12 +251,12 @@ html{
 /*-----------------------END OF Service--------------------------------------*/
 /*---------------------ABOUT US----------------------------------------------*/
 .aboutus{
-	height: auto;
+	height: 550px;
 	position: relative;
 	overflow: hidden;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(../images/bg3.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(../images/show10.png);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	background-attachment: fixed;
 
 }
@@ -281,7 +287,25 @@ html{
 	transform: skewY(-3deg);
 	box-shadow: 0 0 100px black;
 }
-.vision-mission{
+.aboutus-fsrj{
+	width: 50%;
+	padding-right: 1rem; 
+	margin-top: 50px;
+}
+.ab-h2{
+	background-image: url(../images/bgtitle.png);
+	/*background-position: center;*/
+	/*background-size: cover;*/
+	padding-right: 100px;
+}
+.aboutus-fsrj p {
+	font-size: 1.5rem;
+}
+.aboutus-fsrj ul{
+	font-size: 1.5rem;
+	list-style: none;
+}
+/*.vision-mission{
 	width: 45%;
 	margin-top: 70px;
 	margin-bottom: 70px;
@@ -293,33 +317,36 @@ html{
 .mission{
 	text-align: right;
 	margin-top: 50px;
-}
+}*/
 .aboutus-sidepic{
 	width: 50%;
+	height: auto;
 	position: absolute;
-	top: -18%;
+	top: 0%;
 	right: 1%;
+	border: 10px solid #f2f2f2;
 }
 .aboutus-sidepic img{
 	height: 100%;
 	width: 100%;
 	/*border-radius: 5px;*/
-	/*box-shadow: 0 -10px 10px black;*/
-	border: 10px solid #f2f2f2;
+	box-shadow: 0 0 10px black;
+	object-position: top;
 
 }
 .aboutus-sub-sidepic{
 	width: 30%;
+	height: 250px;
 	position: absolute;
-	bottom: -2%;
+	bottom: 0%;
 	right: 5%;
 	z-index: 1;
+	border: 10px solid #f2f2f2;
 }
 .aboutus-sub-sidepic img{
 	height: 100%;
 	width: 100%;
-	border: 10px solid #f2f2f2;
-
+	box-shadow: 0 0 10px black;
 }
 
 /*---------------------ABOUT US----------------------------------------------*/
@@ -471,7 +498,7 @@ html{
 	height: auto;
 	position: relative;
 	overflow: hidden;
-	background-image: linear-gradient(to left , rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(../images/bg2.jpg);
+	background-image: linear-gradient(to left , rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(../images/show1.png);
 	/*background-image: url(../images/bg2.jpg);*/
 	background-size: cover;
 	background-position: center;
@@ -596,7 +623,7 @@ html{
 .footer-extention{
 	position: relative;
 	overflow: hidden;
-	background-image: linear-gradient( to top ,grey,rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url(../images/bg1.jpg);
+	background-image: linear-gradient( to top ,grey,rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url(../images/show1.png);
 	background-size: cover;
 	background-position: bottom;
 	background-attachment: fixed;
@@ -781,7 +808,7 @@ html{
 .main-timeline:before{
 	content: "";
 	width: 10px;
-	height: 100%;
+	height: 90%;
 	border: 3px solid  #959595;
 	position: absolute;
 	top: 20px;
@@ -951,7 +978,7 @@ html{
 	box-shadow: 0 0 10px black;
 }
 .aboutus2-content{
-	margin-top: 170px;
+	margin-top: 50px;
 }
 .aboutus2-content h5{
 	color: grey;
@@ -976,6 +1003,9 @@ html{
 .aboutus2-motto{
 	position: relative;
 	top: 0;
+}
+.aboutus2-motto p{
+	font-size: 1.9rem;
 }
 .recent-post-img img{
 	width: 100%;
@@ -1005,16 +1035,77 @@ html{
 }
 
 /*END OF ABOUT US PAGE*/
+/*OUR TEAM*/
+.member-pic img{
+	height: 200px;
+	width: 100%;
+}
+.indiv-main-member{
+	/*margin-top: 120px;*/
+}
+.indiv-member img{
+	height: 200px;
+	width:100%;
+	transform: scale(1.6);
+	filter: grayscale(100%);
+	transition: .5s;
+}
+.indiv-member-img{
+	height: 200px;
+	/*margin-bottom: 20px;*/
+	overflow: hidden;
+	transition: .5s;
+}
+.indiv-member-img img:hover,
+.indiv-member .active img{
+	filter: grayscale(0%);
+	transform: scale(1.2);
+	transition: .5s;
+}
+.indiv-member .active,
+.indiv-member-img:hover{
+	border: 2px solid gold;
+	filter: grayscale(0%);
+	transition: .5s;
+}
+.indiv-testimonies-main-pic img,
+.indiv-member-main-pic img{
+	box-shadow: 0 0 10px black;
+}
+
+.joinpage{
+	height: 100vh;
+	overflow: hidden;
+}
+.join-container{
+	background-image: url(../images/show4.png);
+	background-size: cover;
+	background-position: bottom;
+	height: 100vh;
+}
+.join-form-container,
+.become-form-container{
+	margin-top: 5%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 1rem;
+}
+/*END OF OUR TEAM*/
 /*TESTIMONIES*/
+.become-container{
+	background-image: url(../images/show3.png);
+	background-size: cover;
+	background-position: bottom;
+	height: 100vh;
+}
 .indiv-testimonial img{
 	height: 200px;
 	width:100%;
 	transform: scale(1.6);
 	filter: grayscale(100%);
+	transition: .5s;
 }
 .indiv-testimonial-img{
 	height: 200px;
-	margin-bottom: 20px;
 	overflow: hidden;
 	transition: .5s;
 }
@@ -1033,11 +1124,13 @@ html{
 .indiv-testimonies-gall-pic img{
 	transform: scale(1.6);
 	filter: grayscale(100%);
+	transition: .5s;
 }
 .indiv-testimonies-gall-pic{
 	height: 100px;
 	margin-bottom: 20px;
 	overflow: hidden;
+	transition: .5s;
 }
 .indiv-testimonies-gall-pic img:hover,
 .indiv-testimonies-gall .active img{
