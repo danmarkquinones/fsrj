@@ -137,22 +137,21 @@ html{
 .showcase1 img,
 .showcase2 img,
 .showcase3 img{
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
 	filter: contrast(40%);
-	
 }
 .showcase1 img,
 .showcase3 img{
-	object-fit: cover;
-	object-position: bottom;
+	/*object-fit: cover;*/
+	object-position: top;
 }
 .showcase .owl-controls {
 	position: relative;
 	top: -10%;
 }
 .showcase{
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 	overflow: hidden;
 	/*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(../images/bg1.jpg);*/
@@ -256,7 +255,7 @@ html{
 	overflow: hidden;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(../images/show10.png);
 	background-size: cover;
-	background-position: bottom;
+	background-position: bottom left;
 	background-attachment: fixed;
 
 }
@@ -294,8 +293,6 @@ html{
 }
 .ab-h2{
 	background-image: url(../images/bgtitle.png);
-	/*background-position: center;*/
-	/*background-size: cover;*/
 	padding-right: 100px;
 }
 .aboutus-fsrj p {
@@ -305,19 +302,7 @@ html{
 	font-size: 1.5rem;
 	list-style: none;
 }
-/*.vision-mission{
-	width: 45%;
-	margin-top: 70px;
-	margin-bottom: 70px;
-	color: #fff;
-}
-.vision h3, .mission h3{
-	border-bottom: 2px solid gold;
-}
-.mission{
-	text-align: right;
-	margin-top: 50px;
-}*/
+
 .aboutus-sidepic{
 	width: 50%;
 	height: auto;
@@ -329,7 +314,6 @@ html{
 .aboutus-sidepic img{
 	height: 100%;
 	width: 100%;
-	/*border-radius: 5px;*/
 	box-shadow: 0 0 10px black;
 	object-position: top;
 
@@ -499,9 +483,8 @@ html{
 	position: relative;
 	overflow: hidden;
 	background-image: linear-gradient(to left , rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(../images/show1.png);
-	/*background-image: url(../images/bg2.jpg);*/
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 	background-attachment: fixed;
 	padding-top:2rem;
 	padding-bottom: 5rem;
@@ -684,7 +667,9 @@ html{
 .google-map{
 	box-shadow: 0 0 10px rgba(255,215,0,0.8);
 }
-
+.our-partners img{
+	margin-bottom: 10px;
+}
 /*-----------------END OF FOOTER----------------------------------------------------*/
 
 /*SERVICE*/
@@ -1078,7 +1063,7 @@ html{
 	overflow: hidden;
 }
 .join-container{
-	background-image: url(../images/show4.png);
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(../images/bg11.jpg);
 	background-size: cover;
 	background-position: bottom;
 	height: 100vh;
@@ -1089,13 +1074,37 @@ html{
 	background-color: rgba(0,0,0,0.5);
 	padding: 1rem;
 }
+.join-content{
+	color: #f2f2f2;
+	margin-top: 15%;
+	padding-right: 15%;
+}
+.become-content{
+	color: #f2f2f2;
+	margin-top: 15%;
+	/*padding-left: 15%;*/
+}
+.join-content h1,
+.become-content h1{
+	font-size: 5rem;
+}
+.join-content h2,
+.become-content h1{
+	font-size: 3.5rem;
+}
 /*END OF OUR TEAM*/
 /*TESTIMONIES*/
-.become-container{
-	background-image: url(../images/show3.png);
+#test-bg{
+	background-color: #f2f2f2;
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='35' height='17.5' viewBox='0 0 35 17.5'%3E%3Cdefs%3E%3Crect stroke='%23f2f2f2' stroke-width='0.15' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23f2f2f2' stroke-width='0.15'%3E%3Crect fill='%23ededed' width='1' height='1'/%3E%3Crect fill='%23f2f2f2' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23e8e8e8' width='1' height='1' y='1'/%3E%3Crect fill='%23e3e3e3' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23dfdfdf'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23dadada'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23d5d5d5'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23332e20'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23332e20'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='35' height='17.5'/%3E%3Crect fill='url(%23b)' width='35' height='17.5'/%3E%3Crect fill='url(%23c)' width='35' height='17.5'/%3E%3Crect fill='url(%23d)' width='35' height='17.5'/%3E%3Crect fill='url(%23e)' width='35' height='17.5'/%3E%3Crect fill='url(%23f)' width='35' height='17.5'/%3E%3C/svg%3E");
+	background-attachment: fixed;
 	background-size: cover;
-	background-position: bottom;
-	height: 100vh;
+}
+.become-container{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(../images/bg10.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 95vh;
 }
 .indiv-testimonial img{
 	height: 200px;
